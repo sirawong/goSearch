@@ -91,7 +91,7 @@ func GetData(c *fiber.Ctx) error {
 
 	total, _ := collection.CountDocuments(ctx, filter)
 
-	findOptions.SetSkip((int64(page) - 1) * perPage) // 0-9, 9-18
+	findOptions.SetSkip((int64(page) - 1) * perPage) // 0-9
 	findOptions.SetLimit(perPage)                    // 9
 
 	// get in db

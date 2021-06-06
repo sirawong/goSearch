@@ -5,3 +5,5 @@ docker-compose.yml
 .env
 
 readme.md
+
+.gitignore
